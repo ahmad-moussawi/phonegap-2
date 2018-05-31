@@ -1,15 +1,67 @@
 * {
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
 body {
-    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
-    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    width:100%;
+    -webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
+    width: 100%;
 }
 
 .red {
-  color: red;
-  font-weight: bold;
+    color: red;
+    font-weight: bold;
+}
+
+list {
+    display: block;
+    border-bottom: 1px solid red;
+}
+
+.burger-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.burger-list .item {
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgb(161, 70, 70);
+    color: rgb(161, 70, 70);
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: .5s linear all;
+}
+
+.burger-list .item.active {
+    background: rgb(161, 70, 70);;
+    color: #fff;
+    transform: rotate(20deg) scale(1.1);
+}
+
+.burger-list .item.active .price{
+    display: block;
+}
+
+.burger-list .item.active .name{
+    display: none;
+}
+
+.burger-list .item img {
+    width: 50%
+}
+
+.burger-list .item .name, .burger-list .item .price  {
+
+    font-size: 12px;
+    margin: 10px;
+    padding: 5px;
+
+}
+
+.burger-list .item .price {
+    display: none;
 }
