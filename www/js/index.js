@@ -61,12 +61,12 @@ document.addEventListener('deviceready', function () {
 
         // use console.log to print messages to the console,
         // useful for debugging
-        console.log(i);
+        // console.log(i);
 
         if (i === 5) {
             cssClass = 'red';
         } else {
-            console.log('i != 5');
+            // console.log('i != 5');
         }
 
         var text = '';
