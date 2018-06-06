@@ -1,0 +1,79 @@
+<ons-page id="plugins">
+
+    <div style="padding: 1px 0 0 0;">
+        <div class="card">
+            <h2 class="card__title">Battery Status</h2>
+            <div class="card__content">
+
+                <p>
+                    Using the
+                    <code>cordova-plugin-battery-status</code> plugin to get the battery level
+                </p>
+
+                <div class="battery-status">
+                    <div class="battery-status-level"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div style="padding: 1px 0 0 0;margin-top:20px;">
+        <div class="card">
+            <h2 class="card__title">Camera</h2>
+            <div class="card__content">
+
+                <p>
+                    Using the
+                    <code>cordova-plugin-camera</code> plugin to access the camera
+                </p>
+
+                <img src="/img/image_placeholder.png" class="camera-image">
+
+                <button id="openCamera" class="button">
+                    <ons-icon icon="fa-camera">
+                    </ons-icon>
+                    Open Camera
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div style="padding: 1px 0 0 0;margin-top:20px;">
+        <div class="card">
+            <h2 class="card__title">Location</h2>
+            <div class="card__content">
+
+                <p>
+                    Using the
+                    <code>cordova-plugin-geolocation</code> plugin to access the current location
+                </p>
+
+                <ul class="list">
+                    <li class="list-item">
+                        <div id="location_lat" class="list-item__center">Lat:
+                            <span></span>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div id="location_lng" class="list-item__center">Long:
+                            <span></span>
+                        </div>
+                    </li>
+                </ul>
+
+                <button id="refreshLocation" style="margin-top:10px;" id="openCamera" class="button">
+                    <ons-icon icon="fa-map-marker">
+                    </ons-icon>
+                    Refresh Location
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</ons-page>

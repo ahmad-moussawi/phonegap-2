@@ -25,55 +25,46 @@
 
 <body>
 
+    <!-- THE MAIN PAGE -->
     <ons-page>
+
+        <!-- TOP TOOLBAR -->
         <ons-toolbar>
             <div class="center">Burgers</div>
         </ons-toolbar>
 
+        <!-- TABS using the position auto to let the tab adapt to each platform design guidelines -->
         <ons-tabbar swipeable position="auto">
-            <ons-tab page="burgers.html" label="Burgers" icon="ion-home, material:md-home" badge="7" active>
+            <ons-tab page="pages/home.html" label="Home" icon="ion-home, material:md-home" active>
             </ons-tab>
-            <ons-tab page="kebbes.html" label="Kebbes" icon="md-settings" active-icon="md-face">
+            <ons-tab page="pages/menu.html" label="Menu" icon="fa-bars" badge="7">
+            </ons-tab>
+            <ons-tab page="pages/control.html" label="Control" icon="fa-cog">
+            </ons-tab>
+            <ons-tab page="pages/plugins.html" label="Plugins" icon="fa-mobile">
             </ons-tab>
         </ons-tabbar>
     </ons-page>
 
-    <template id="burgers.html">
-        <ons-page id="Tab1">
-            <p style="text-align: center;">
-                This is the first page.
-            </p>
-        </ons-page>
-    </template>
 
-    <template id="kebbes.html">
-        <ons-page id="Tab2">
-            <p style="text-align: center;">
-                This is the second page.
-            </p>
-        </ons-page>
-    </template>
-
-
-
+    <!-- cordova.js must be loaded first -->
     <script src="cordova.js"></script>
+
     <script src="js/jquery.min.js"></script>
 
-
-    <!-- include onsen.ui -->
-    <!-- <link rel="stylesheet" href="js/onsenui/onsenui.css">
-    <link rel="stylesheet" href="js/onsenui/onsen-css-components.min.css">
-    <script src="js/onsenui/onsenui.min.js"></script> -->
-
+    <!-- loading onseniu styles and js files -->
     <link rel="stylesheet" href="js/onsen/css/onsenui.min.css">
     <link rel="stylesheet" href="js/onsen/css/onsen-css-components.min.css">
-
-    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
     <script src="js/onsen/js/onsenui.min.js"></script>
 
 
-    <script src="js/index.js"></script>
+    <!-- loading the session we have used this for the custom control demo -->
+    <script src="js/session.js"></script>
     <script src="js/list.control.js"></script>
+
+    <!-- the main file for the app, where we have to put everything inside the `deviceready` event -->
+    <script src="js/index.js"></script>
+
 </body>
 
 </html>

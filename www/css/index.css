@@ -14,54 +14,38 @@ body {
     font-weight: bold;
 }
 
+.logo {
+    width: 90%;
+    margin: 20px auto;
+}
+
 list {
     display: block;
-    border-bottom: 1px solid red;
+    margin-top: 30px;
 }
 
-.burger-list {
-    display: flex;
-    flex-wrap: wrap;
+
+
+.battery-status {
+    width: 90%;
+    height: 20px;
+    margin:40px auto;
+    border: 1px solid #424242;
+    border-radius: 3px;
 }
 
-.burger-list .item {
-    width: 80px;
-    height: 80px;
-    border: 1px solid rgb(161, 70, 70);
-    color: rgb(161, 70, 70);
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transition: .5s linear all;
+.battery-status-level {
+    height: 100%;
+    width: 0;
+    background-color: tomato;
 }
 
-.burger-list .item.active {
-    background: rgb(161, 70, 70);;
-    color: #fff;
-    transform: rotate(20deg) scale(1.1);
+.battery-status-level.plugged {
+    background-color: green;
 }
 
-.burger-list .item.active .price{
-    display: block;
-}
-
-.burger-list .item.active .name{
-    display: none;
-}
-
-.burger-list .item img {
-    width: 50%
-}
-
-.burger-list .item .name, .burger-list .item .price  {
-
-    font-size: 12px;
-    margin: 10px;
-    padding: 5px;
-
-}
-
-.burger-list .item .price {
-    display: none;
+.camera-image {
+    width: 90%;
+    margin: 20px auto;
+    border: 1px solid #eee;
 }
