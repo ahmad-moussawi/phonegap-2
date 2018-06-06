@@ -132,7 +132,7 @@ document.addEventListener('init', function (event) {
 inside your html
 
 ```html
-    <!-- "burgers" and "kebbe" variable should be defined inside the session global state -->
+    <!-- "burgers" and "kebbe" variables should be defined inside the session global state -->
     <list data-src="burgers" data-title="Burger Section"></list>
     <list data-src="kebbe" data-title="Lebanese Section"></list>
 ```
